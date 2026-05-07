@@ -1,0 +1,14 @@
+# Local preview / OS
+.DS_Store
+Thumbs.db
+
+# Python http.server artifacts
+*.log
+
+# Editor
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.*
