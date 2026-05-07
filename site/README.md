@@ -50,6 +50,10 @@ Current walk fields:
 - `practicalNotes`
 - `safetyNotes`
 
+## Content updates
+
+Use `../CONTENT_UPDATE_GUIDE.md` when adding organiser details or future walks.
+
 ## Before public launch
 
 Do not share this as a live RSVP page until these are resolved:
