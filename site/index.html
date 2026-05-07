@@ -6,7 +6,7 @@
     <title>Ballarat Masonic Bushwalking Club</title>
     <meta
       name="description"
-      content="A Ballarat-based bushwalking club for Freemasons, friends, family and dog-friendly adventures across local Victorian trails."
+      content="A Ballarat-based bushwalking club for Freemasons, friends, family and selected dog-friendly walks across local Victorian trails."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Ballarat Masonic Bushwalking Club home">
         <span class="brand-mark" aria-hidden="true">⌁</span>
@@ -33,13 +34,13 @@
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero section-shell">
+    <main id="main-content">
+      <section id="top" class="hero section-shell">
         <div class="hero-copy">
           <p class="eyebrow">Ballarat • Fellowship • Fresh air</p>
           <h1>Walk local. Breathe deep. Enjoy good company.</h1>
           <p class="hero-lede">
-            A welcoming bushwalking club for Freemasons, friends, family and four-legged companions — exploring local and regional Victorian trails from our Ballarat base.
+            A welcoming bushwalking club for Freemasons, friends, family and four-legged companions — exploring suitable local and regional Victorian trails from our Ballarat base.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#walks">See the first walk</a>
@@ -47,27 +48,27 @@
           </div>
           <div class="quick-facts" aria-label="Club highlights">
             <span>Family friendly</span>
-            <span>Dog friendly walks</span>
-            <span>Easy–moderate pace</span>
+            <span>Dog-friendly where suitable</span>
+            <span>Relaxed first walk</span>
           </div>
         </div>
         <div class="hero-card" aria-label="Inaugural walk highlight">
-          <div class="sun"></div>
           <p class="card-kicker">Inaugural walk</p>
           <h2>Slatey Creek Campground No. 1</h2>
           <dl>
-            <div><dt>Date</dt><dd>Sat 9 May</dd></div>
+            <div><dt>Date</dt><dd data-walk="hero-date">Sat 9 May 2026</dd></div>
             <div><dt>Time</dt><dd>10:00 AM</dd></div>
             <div><dt>Welcome</dt><dd>Family + dogs</dd></div>
           </dl>
-          <a href="#walk-slatey-creek">View walk details</a>
+          <p class="status-pill" data-walk="hero-status">Scheduled · updated 8 May 2026</p>
+          <a href="#walk-slatey-creek-campground-first-walk">View walk details</a>
         </div>
       </section>
 
       <section class="intro-band" aria-label="Club summary">
         <div>
           <strong>Rooted in fellowship.</strong>
-          <span>Open to good company, shared trails and the quiet pleasure of being outside.</span>
+          <span>Open to Freemasons, partners, kids, friends and well-behaved dogs on suitable walks.</span>
         </div>
       </section>
 
@@ -76,33 +77,36 @@
           <p class="eyebrow">Upcoming walks</p>
           <h2>First steps on the trail.</h2>
           <p>
-            We’re beginning with a relaxed, welcoming first walk from Slatey Creek Campground No. 1. Bring comfortable shoes, water, weather-appropriate clothing and a friendly spirit.
+            We’re beginning with a relaxed, welcoming first walk from Slatey Creek Campground No. 1. The site keeps unverified details clearly marked so the organiser can confirm them before public launch.
           </p>
-        </div>
-        <article id="walk-slatey-creek" class="walk-card featured">
-          <div class="walk-date"><span>09</span><small>May</small></div>
-          <div class="walk-body">
-            <p class="card-kicker">First club walk • 10:00 AM</p>
-            <h3>Inaugural Walk — Slatey Creek Campground</h3>
-            <p>
-              We’re kicking things off with a friendly inaugural walk from Slatey Creek Campground No. 1 on Saturday 9 May at 10:00 AM. This first outing is intended as a welcoming, easygoing get-together for Freemasons, family, friends and dogs, with time to enjoy the bush, fresh air and conversation.
-            </p>
-            <p>
-              Please bring water, comfortable walking shoes and clothing suited to the weather. Dogs are welcome but should be kept on lead or under close control as conditions require. As always, check local conditions before heading out.
-            </p>
-            <ul class="walk-meta">
-              <li><strong>Meeting point:</strong> Slatey Creek Campground No. 1</li>
-              <li><strong>Suitable for:</strong> families, friends and well-behaved dogs</li>
-              <li><strong>Bring:</strong> water, walking shoes, weather-suitable clothing, lead for dogs</li>
-              <li><strong>Status:</strong> scheduled</li>
+          <div class="readiness-card" aria-label="Launch readiness notes">
+            <strong>Before sharing publicly</strong>
+            <ul>
+              <li>Add organiser name and contact method.</li>
+              <li>Confirm route length, pace and any parking or toilet notes.</li>
+              <li>Confirm the weather/cancellation update process.</li>
             </ul>
-            <div class="badge-row">
-              <span>Family friendly</span>
-              <span>Dogs welcome</span>
-              <span>Inaugural walk</span>
-            </div>
           </div>
-        </article>
+        </div>
+        <div id="walk-list" aria-live="polite">
+          <article id="walk-slatey-creek-campground-first-walk" class="walk-card featured">
+            <div class="walk-date" aria-hidden="true"><span>09</span><small>May</small></div>
+            <div class="walk-body">
+              <p class="card-kicker">First club walk • 10:00 AM</p>
+              <h3>Inaugural Walk — Slatey Creek Campground</h3>
+              <p>
+                A friendly first outing from Slatey Creek Campground No. 1 for Freemasons, family, friends and well-behaved dogs.
+              </p>
+              <ul class="walk-meta">
+                <li><strong>Date:</strong> Saturday 9 May 2026</li>
+                <li><strong>Meeting point:</strong> Slatey Creek Campground No. 1</li>
+                <li><strong>Organiser:</strong> Walk organiser — name/contact to confirm</li>
+                <li><strong>Status:</strong> Scheduled <span class="meta-note">(updated 8 May 2026)</span></li>
+              </ul>
+              <p class="safety-note">Bring water, comfortable shoes, weather-suitable clothing and a lead for dogs. Check conditions before heading out.</p>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section id="about" class="section-shell about-grid">
@@ -113,13 +117,13 @@
             The Ballarat Masonic Bushwalking Club brings together people who enjoy fresh air, good company and the landscapes around Ballarat and regional Victoria.
           </p>
           <p>
-            With masonic roots and an open, family-friendly spirit, the club welcomes brethren, friends, family and well-behaved pets on suitable walks.
+            With masonic roots and an open, family-friendly spirit, the club welcomes Freemasons, friends, family and well-behaved pets on suitable walks.
           </p>
         </div>
         <div class="values-list">
-          <article><span>01</span><h3>Welcoming</h3><p>Open walks where family, friends and guests feel at ease.</p></article>
-          <article><span>02</span><h3>Practical</h3><p>Clear details before each walk: when, where, what to bring and who it suits.</p></article>
-          <article><span>03</span><h3>Grounded</h3><p>Quiet masonic dignity without making the club feel closed or formal.</p></article>
+          <article><span>01</span><h3>Welcoming</h3><p>Open walks where family, friends and guests feel at ease from the first invitation.</p></article>
+          <article><span>02</span><h3>Practical</h3><p>Clear details before each walk: when, where, what to bring, who to contact and who it suits.</p></article>
+          <article><span>03</span><h3>Grounded</h3><p>Quiet masonic dignity without making the club feel closed, formal or overly branded.</p></article>
         </div>
       </section>
 
@@ -129,11 +133,11 @@
         <div class="faq-grid">
           <details open>
             <summary>Do I need to be a Freemason?</summary>
-            <p>No. The club has masonic roots, but friends and family are welcome.</p>
+            <p>No. The club has masonic roots, but friends, family and guests are welcome on suitable walks.</p>
           </details>
           <details>
             <summary>Can I bring my dog?</summary>
-            <p>On dog-friendly walks, yes — please keep dogs well behaved, under control and on lead where required.</p>
+            <p>On dog-friendly walks, yes — please keep dogs well behaved, under control and on lead where required. Dog suitability should be confirmed for each walk.</p>
           </details>
           <details>
             <summary>What should I bring?</summary>
@@ -141,7 +145,15 @@
           </details>
           <details>
             <summary>What if weather changes?</summary>
-            <p>Walk details may change for weather or track conditions. Check with the organiser before heading out.</p>
+            <p>Walk details may change for weather or track conditions. Before public launch, nominate who updates the walk status and when attendees will be notified.</p>
+          </details>
+          <details>
+            <summary>Are children welcome?</summary>
+            <p>Yes, on suitable family-friendly walks. Children remain under the supervision of their parent or guardian.</p>
+          </details>
+          <details>
+            <summary>How hard are the walks?</summary>
+            <p>Each walk should list its own pace, length and suitability once confirmed. If unsure, ask the organiser before coming along.</p>
           </details>
         </div>
       </section>
@@ -151,15 +163,19 @@
           <p class="eyebrow">Join or enquire</p>
           <h2>Interested in coming along?</h2>
           <p>
-            Send a quick note and we’ll help you find the next suitable walk. For now, this prototype uses a friendly placeholder form ready to connect to email when the organiser is ready.
+            This is a founder-demo prototype. The public contact path is intentionally marked until the organiser supplies the real email, phone or RSVP process.
           </p>
+          <div class="contact-status">
+            <strong data-contact="status">Prototype only</strong>
+            <span data-contact="fallback">Add organiser email or phone here before sharing publicly.</span>
+          </div>
         </div>
         <form class="contact-form" onsubmit="event.preventDefault(); window.BMBC.showThanks();">
           <label>Name <input required name="name" autocomplete="name" /></label>
-          <label>Email or phone <input required name="contact" autocomplete="email" /></label>
+          <label>Email or phone <input required name="contact" autocomplete="email" inputmode="email" /></label>
           <label>Message <textarea name="message" rows="4">I’m interested in the first walk from Slatey Creek Campground No. 1.</textarea></label>
-          <button class="button primary" type="submit">Enquire about joining this walk</button>
-          <p id="form-note" role="status"></p>
+          <button class="button primary" type="submit">Test prototype enquiry</button>
+          <p id="form-note" role="status" aria-live="polite"></p>
         </form>
       </section>
     </main>
