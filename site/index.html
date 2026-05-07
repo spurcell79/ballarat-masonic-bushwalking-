@@ -168,7 +168,13 @@
           <div class="contact-status">
             <strong data-contact="status">Prototype only</strong>
             <span data-contact="fallback">Add organiser email or phone here before sharing publicly.</span>
+            <small data-contact="rsvp">Before launch, confirm whether people can turn up on the day or should RSVP first.</small>
           </div>
+          <ol class="process-list" aria-label="Proposed enquiry flow">
+            <li><strong>Ask to come along</strong><span>Visitor sends a simple enquiry once the real contact path is added.</span></li>
+            <li><strong>Organiser confirms details</strong><span>They receive meeting, weather and suitability notes before the walk.</span></li>
+            <li><strong>Status stays visible</strong><span>The page shows updates if weather or conditions change.</span></li>
+          </ol>
         </div>
         <form class="contact-form" onsubmit="event.preventDefault(); window.BMBC.showThanks();">
           <label>Name <input required name="name" autocomplete="name" /></label>

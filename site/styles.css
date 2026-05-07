@@ -215,7 +215,7 @@ p { color: var(--muted); line-height: 1.75; }
 .meta-note { color: var(--slate); }
 .badge-row { display: flex; flex-wrap: wrap; gap: .5rem; }
 
-.readiness-card, .callout, .note-list, .contact-status {
+.readiness-card, .callout, .note-list, .contact-status, .process-list li {
   border: 1px solid rgba(176,141,87,.26);
   border-radius: 20px;
   background: rgba(255,250,240,.62);
@@ -244,6 +244,26 @@ summary::marker { color: var(--brass); }
 
 .join-section { align-items: stretch; }
 .contact-status { margin-top: 1rem; padding: 1rem; display: grid; gap: .25rem; color: var(--muted); }
+.contact-status small { line-height: 1.6; color: var(--slate); }
+.process-list { counter-reset: step; display: grid; gap: .65rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+.process-list li { counter-increment: step; position: relative; padding: .9rem .95rem .9rem 3.1rem; }
+.process-list li::before {
+  content: counter(step);
+  position: absolute;
+  left: .9rem;
+  top: .9rem;
+  width: 1.55rem;
+  height: 1.55rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--forest);
+  color: var(--paper);
+  font-weight: 900;
+  font-size: .82rem;
+}
+.process-list strong, .process-list span { display: block; }
+.process-list span { margin-top: .2rem; color: var(--muted); line-height: 1.55; }
 .contact-form { padding: clamp(1.2rem, 3vw, 2rem); display: grid; gap: 1rem; }
 label { display: grid; gap: .35rem; color: var(--forest); font-weight: 900; }
 input, textarea {

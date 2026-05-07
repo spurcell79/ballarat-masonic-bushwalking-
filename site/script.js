@@ -66,12 +66,14 @@ function hydrateWalkContent() {
   const walkList = document.getElementById('walk-list');
   const contactStatus = document.querySelector('[data-contact="status"]');
   const contactFallback = document.querySelector('[data-contact="fallback"]');
+  const contactRsvp = document.querySelector('[data-contact="rsvp"]');
 
   if (heroDate) heroDate.textContent = walk.shortDate;
   if (heroStatus) heroStatus.textContent = `${walk.status} · updated ${walk.statusUpdated}`;
   if (walkList) walkList.innerHTML = renderWalkCard(walk);
   if (contactStatus) contactStatus.textContent = clubData.contact.status;
   if (contactFallback) contactFallback.textContent = clubData.contact.enquiryFallback;
+  if (contactRsvp) contactRsvp.textContent = clubData.contact.rsvpGuidance;
 }
 
 hydrateWalkContent();
