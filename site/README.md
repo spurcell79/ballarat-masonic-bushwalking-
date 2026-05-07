@@ -19,14 +19,14 @@ Then open: http://127.0.0.1:4173
 - Mobile-first homepage
 - First walk feature: Saturday 9 May 2026, 10:00 AM, Slatey Creek Campground No. 1
 - About section with subtle masonic roots and inclusive family/friend language
-- Data-driven walk card rendered from `site/script.js`
+- Data-driven walk card rendered from `site/data.js` and `site/script.js`
 - FAQ and safety notes
 - Prototype-only enquiry form with clear launch placeholder messaging
 - Visual direction: Victorian bushland, eucalyptus, sandstone, subtle brass, understated masonic geometry
 
 ## Content model
 
-Walk details currently live in `clubData.walks` inside `site/script.js`. This keeps the site static while giving the next build a clean path toward JSON, CMS, SQLite or a framework.
+Walk details currently live in `window.BMBC_CONTENT.walks` inside `site/data.js`. `site/script.js` only renders the content and handles lightweight interactions. This keeps the site static while giving the next build a clean path toward JSON, CMS, SQLite or a framework.
 
 Current walk fields:
 
@@ -66,6 +66,7 @@ Do not share this as a live RSVP page until these are resolved:
 Useful quick checks after editing:
 
 ```bash
+node --check data.js
 node --check script.js
 python3 -m http.server 4173
 ```
